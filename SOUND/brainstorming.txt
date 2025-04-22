@@ -24,4 +24,10 @@ Several device types still need to be added
 
 Sound file type
 ---------------
-must be SDL2-supported; not decided upon yet
+Must be SDL2-supported; not decided upon yet
+Mono/Stereo? I think rather mono ...
+Sampling rate?
+
+SDL2 sdl_mixer
+--------------
+"chunk" versus "music" (see: https://wiki.libsdl.org/SDL2_mixer/Mix_LoadWAV)
