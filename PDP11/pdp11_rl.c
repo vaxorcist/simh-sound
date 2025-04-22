@@ -25,6 +25,8 @@
 
    rl           RL11(RLV12)/RL01/RL02 cartridge disk
 
+   22-Apr-25    HUH     Addition of sound dummy
+                        SET RLn SOUND/NOSOUND
    28-Nov-22    RMS     Fixed word count adjustment on NXM
    23-Oct-13    RMS     Revised for new boot setup routine
    24-Mar-11    JAD     Various changes to support diagnostics, including:
@@ -143,6 +145,7 @@ static struct drvtyp drv_tab[] = {
 #define UNIT_RL02       (1u << UNIT_V_RL02)
 #define UNIT_NOAUTO     DKUF_NOAUTOSIZE                 /* autosize disable */
 #define GET_DTYPE(x)    (((x) >> UNIT_V_RL02) & 1)
+#define UNIT_SOUND      (UNIT_V_DUMMY + 1)              /* sound */
 
 /* Parameters in the unit descriptor */
 
@@ -357,8 +360,13 @@ static const MTAB rl_mod[] = {
     { UNIT_BRUSH, UNIT_BRUSH, "has brushes", "BRUSH",
         NULL, NULL, NULL, "Enable brushes" },
 
+    { UNIT_SOUND,          0, "no sound",  "NOSOUND",
+        NULL, NULL, NULL, "Disable sound" },
+    { UNIT_SOUND, UNIT_SOUND, "has sound", "SOUND",
+        NULL, NULL, NULL, "Enable sound" },
+
     { MTAB_XTD|MTAB_VUN|MTAB_NMO, RLDS_CVO, "open",   "OPEN", 
-        &rl_set_cover, &rl_show_cover, NULL, "Drive cover" },
+        &rl_set_cover, &rl_show_cover, NULL, "Open drive cover" },
     { MTAB_XTD|MTAB_VUN,                 0, NULL,     "CLOSED", 
         &rl_set_cover, NULL,           NULL, "Close drive cover" },
     { MTAB_XTD|MTAB_VUN|MTAB_NMO,        0, "load",   "LOAD", 
