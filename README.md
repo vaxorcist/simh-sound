@@ -8,7 +8,7 @@ I would very much appreciate if owners of other classic computer devices would c
 
 Following a most-wanted list:
 - RK07
-- any classic DEC tape drive
+- any classic DEC 9-track tape drive
 - RM03
 - RP04
 - RP05
