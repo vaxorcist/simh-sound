@@ -1,6 +1,6 @@
 #  SIMH sound project
 
-This is a fork of the [SIMH computer simulator](https://github.com/open-simh/simh), trying to add real or realistic sounds from disk drives and other computer devices to the simulation.
+This is a fork of the [SIMH computer simulator](https://github.com/open-simh/simh), trying to add real or realistic sounds from disk drives and other computer devices to the simulation using the SDL2 sdl_mixer extension.
 
 There are two reasons I want sound for SIMH (the sound of the running computer and its devices: fans, disks, floppys, tape drive, ... - as true as possible):
 - an objective reason:
