@@ -1,0 +1,8 @@
+                    
+Date        Actor   Action
+22.04.25    Ulli    Open SIMH forked
+                    New directory: "simh-sound/SOUND"
+                    New file: "simh-sound/SOUND/brainstorming.txt"
+                    Changed File: "simh-sound/README.md"; Description of the SIMH sound project
+                    New file: "simh-sound/0_logfile.txt" (this file)
+                    Changed File: "simh-sound/PDP11/pdp11_rl.c"; First sound dummy added
