@@ -5,5 +5,5 @@ Collection of ideas and thoughts on the implementation of the SIMH sound project
 ENABLE/DISABLE SOUND
 --------------------
 - Global sound setting at the computer level: SET SOUND ENABLED|DISABLED (Default: ?), overwrites all specific settings
-- Specific sound setting at the device type level, e.g. device RL: SET RL SOUND ENABLED|DISABLED (Default: ?) 
-  or at the device level, e.g. device RL: SET RLn SOUND ENABLED|DISABLED (Default: ?)
+- Specific sound setting at the device type level, e.g. device RL: SET RL SOUND|NOSOUND (Default: ?) 
+  or at the device level, e.g. device RL0: SET RL0 SOUND|NOSOUND (Default: ?)
